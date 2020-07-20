@@ -303,3 +303,12 @@ h1 img {
     transform: skew(40deg);
     display: inline-block;
 }
+
+.side .btnContents {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    color: #b9fb05;
+    font-size: 60px;
+    transform: skew(40deg);
+}
