@@ -89,39 +89,39 @@ h1 img {
     width: 220px;
 }
 
-.nav .depth1 > li {
+.nav .depth1>li {
     height: 50px;
     line-height: 50px;
-    font: bold 18px/3 'play'; 
+    font: bold 18px/3 'play';
     /* font: 굵기 크기 줄간격 등을 한번에 써넣을 수 있음 */
     color: #222;
     text-align: right;
     position: relative;
-    transition: all 0.3s; 
+    transition: all 0.3s;
 }
 
-.nav .depth1 > li:hover {
+.nav .depth1>li:hover {
     background: #000;
     color: #fff;
 }
 
-.nav .depth1 > li:first-child {
+.nav .depth1>li:first-child {
     background: #000;
     color: #fff;
 }
 
-.nav .depth1 > li > a {
+.nav .depth1>li>a {
     display: block;
     padding-right: 40px;
 }
 
-.nav .depth1 > li > a > span {
+.nav .depth1>li>a>span {
     transform: skew(40deg);
     display: block;
     /* inline 성격은 transform 이 안먹히기 때문에 block 성격으로 바꿔줘야 함 */
 }
 
-.nav .depth1 > li > a > span > i{
+.nav .depth1>li>a>span>i {
     margin-right: 20px;
     /* padding 으로 주면 제자리에서 돌지않고 그 범위를 그리며 돈다 */
 }
@@ -137,38 +137,38 @@ h1 img {
     transition: all 0.5s;
 }
 
-.nav .depth2 > li {
+.nav .depth2>li {
     background: #111;
     border-bottom: 1px solid #b9fb05;
     margin-bottom: 3px;
     font: bold 16px/2.5 'arial';
 }
 
-.nav .depth2 > li:hover {
+.nav .depth2>li:hover {
     background: #b9fb05;
     color: #222;
 }
 
-.nav .depth1 > li:first-child .depth2 > li:hover {
+.nav .depth1>li:first-child .depth2>li:hover {
     background: #222;
     color: #fff;
 }
 
-.nav .depth1 > li:first-child .depth2 {
+.nav .depth1>li:first-child .depth2 {
     left: 95%;
     opacity: 0.8;
 }
 
-.nav .depth1 > li:hover .depth2 {
+.nav .depth1>li:hover .depth2 {
     opacity: 0.8;
     left: 95%;
 }
 
-.nav .depth2 > li > a {
+.nav .depth2>li>a {
     display: block;
 }
 
-.nav .depth2 > li > a > span {
+.nav .depth2>li>a>span {
     transform: skew(40deg);
     display: inline-block;
 }
@@ -191,4 +191,115 @@ h1 img {
 .sns li:hover {
     opacity: 1;
     transform: scale(1.4);
+}
+
+.txtBox {
+    position: fixed;
+    top: 200px;
+    right: 70px;
+    width: 500px;
+    height: 240px;
+}
+
+.txtBox .tit {
+    font-size: 160px;
+    font-family: 'Monoton', cursive;
+    color: #b9fb05;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    letter-spacing: -1px;
+}
+
+.tit em {
+    font-size: 50px;
+    font-family: 'Play', sans-serif;
+    color: #fff;
+}
+
+.txtBox .txt {
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    font-size: 34px;
+    font-family: 'Play';
+    color: #bbb;
+    letter-spacing: -2px;
+}
+
+.txt strong {
+    /* font 속성을 쓸때는 글자크기와 글꼴은 반드시 있어야함 */
+    font: 34px arial;
+    color: #b9fb05;
+    margin-left: 20px;
+}
+
+.side {
+    position: fixed;
+    top: 0;
+    right: -800px;
+    width: 800px;
+    height: 100%;
+    background: #111;
+    opacity: 0.5;
+    transform: skew(-40deg);
+    transition: all 1s;
+}
+
+.side:hover {
+    right: -500px;
+    opacity: 0.8;
+}
+
+.side .con > p img {
+    opacity: 0.3;
+}
+
+.side .con > p img:hover {
+    opacity: 1;
+}
+
+.side .con {
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    left: 135px;
+    background: #000;
+    transition: all 0.5s 0.3s;
+    /* transition 에서 중간에는 진행시간 뒤에는 대기시간임 */
+}
+
+.side:hover .con {
+    left: 50px;
+}
+
+.side .con > p {
+    position: absolute;
+    left: 250px;
+}
+
+.side:hover .con > p {
+    left: 50px;
+}
+
+.side .con > p:nth-child(1) {
+    bottom: 270px;
+    transition: all 0.4s;
+}
+
+.side .con > p:nth-child(2) {
+    bottom: 160px;
+    transition: all 0.8s;
+}
+
+.side .con > p:nth-child(3) {
+    bottom: 50px;
+    transition: all 1.2s;
+}
+
+.side .con > p > em {
+    font: bold normal 16px/1.7 arial;
+    color: #a0bd50;
+    transform: skew(40deg);
+    display: inline-block;
 }
