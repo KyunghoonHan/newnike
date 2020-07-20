@@ -22,6 +22,17 @@ img {
     vertical-align: middle;
 }
 
+.blind {
+    /* position aboslute 는 넓이 높이를 죽이기 위해서 주었다. */
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -99999;
+}
+
 body,
 html {
     width: 100%;
@@ -162,3 +173,22 @@ h1 img {
     display: inline-block;
 }
 
+.sns {
+    position: fixed;
+    top: 60px;
+    right: 50px;
+}
+
+.sns li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 25px;
+    color: #b9fb05;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.sns li:hover {
+    opacity: 1;
+    transform: scale(1.4);
+}
